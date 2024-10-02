@@ -1,0 +1,13 @@
+body {
+  padding: 0 20px;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main a {
+}
