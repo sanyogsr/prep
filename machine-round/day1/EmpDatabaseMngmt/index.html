@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">Employee Database Management</h1>
+      <button class="createEmployee">Add Employee</button>
+    </header>
+    <div class="employees">
+      <div class="employees__name">
+        <span class="employees__name--title">Employee List</span>
+        <div class="employees__name--list"></div>
+      </div>
+      <div class="employees__single">
+        <span class="employees__single--title">Employee Information</span>
+        <div class="employees__single--info"></div>
+      </div>
+    </div>
+    <!-- add employeee modal -->
+
+    <div class="addEmployee">
+      <form action="" class="addEmployee_create">
+        Add a New Employee
+        <div>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="lastName" placeholder="Last Name" required />
+        </div>
+
+        <input type="text" name="imageUrl" placeholder="Image Url {Optional}" />
+        <input type="email" name="email" placeholder="Email" required/ >
+        <input
+          type="number"
+          placeholder="Contact"
+          name="contactNumber"
+          required
+        />
+        <input type="number" name="salary" placeholder="Salary" required />
+        <input type="text" name="address" placeholder="Address" required />
+        <input
+          type="date"
+          name="dob"
+          placeholder="Date Of Birth"
+          class="addEmployee_create--dob"
+          required
+        />
+        <input
+          type="submit"
+          class="addEmployee_create--submit"
+          value="Submit"
+        />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
